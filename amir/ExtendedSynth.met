@@ -1,0 +1,9 @@
+revision=1
+runtimeName=midipatch
+runtimeVersion=0.0.1
+description=
+date=1573844679
+layout=
+parameters={"Global_Gain":"0.5","OSC0_Sine":"1","OSC0_Square":"1","OSC0_Triangle":"1","OSC0_SinePitch":"1","OSC0_SquarePitch":"1","OSC0_TrianglePitch":"1","OSC1_Sine":"1","OSC1_Square":"1","OSC1_Triangle":"1","OSC1_SinePitch":"1","OSC1_SquarePitch":"1","OSC1_TrianglePitch":"1","LowPass_Frequency":"0.990649","LowPass_Resonance":"0","HighPass_Frequency":"0","HighPass_Resonance":"0","LfoAmp_Frequency":"0.01","LfoPitch_Frequency":"0.01","Envelope_Attack":"0.1","Envelope_Decay":"0","Envelope_Sustain":"1","Envelope_Release":"0.1"}
+keyboardBindings=
+midiBindings=
