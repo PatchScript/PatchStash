@@ -1,9 +1,0 @@
-revision=4
-runtimeName=midipatch
-runtimeVersion=0.0.1
-description=
-date=1573834486
-layout=
-parameters={"Global.Gain":"0.5","Global.Sine":"0.987781","Global.Square":"0.21101","Global.SinePitch":"0.991631","Global.SquarePitch":"1","LowPass.Frequency":"0.992427","LowPass.Resonance":"0","HighPass.Frequency":"0","HighPass.Resonance":"0","LFO.Frequency":"0.007229","LFO.Wet":"0.75","LFO.Dry":"0.257573","Envelope.Attack1":"0.1","Envelope.Decay":"0.133858","Envelope.Sustain":"1","Envelope.Release":"0.1"}
-keyboardBindings=
-midiBindings=
