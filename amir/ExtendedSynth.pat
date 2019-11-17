@@ -28,10 +28,12 @@ local triangleP1 = synth:addParameter("OSC1.TrianglePitch", 1.0)
 local lfoAmpFreq = synth:addParameter("MOD.Amp_Freq", 0.5)
 local lfoAmpDry = synth:addParameter("MOD.Amp_Dry", 1.0)
 local lfoAmpWet = synth:addParameter("MOD.Amp_Wet", 0.5)
+local lfoAmpAmount = synth:addParameter("MOD.Amp_Amount", 0.5)
 
 local lfoPitchFreq = synth:addParameter("MOD.Pitch_Freq", 0.5)
 local lfoPitchDry = synth:addParameter("MOD.Pitch_Dry", 1.0)
 local lfoPitchWet = synth:addParameter("MOD.Pitch_Wet", 0.5)
+local lfoPitchAmount = synth:addParameter("MOD.Pitch_Amount", 0.5)
 
 local lpCutoff = synth:addParameter("Filter.LP_Freq", 1.0)
 local lpQ = synth:addParameter("Filter.LP_Q", 0.0)
@@ -76,7 +78,6 @@ local mixAmp = ((osc0AmpWet * lfoAmpWet) + (osc0Dry * lfoAmpDry) +
   				(osc1AmpWet * lfoAmpWet) + (osc1Dry * lfoAmpDry)) * 0.25;
 local mixPitch = ((osc0PitchWet * lfoPitchWet) + (osc0Dry * lfoPitchDry) +
   				(osc1PitchWet * lfoPitchWet) + (osc1Dry * lfoPitchDry)) * 0.25; 
-
 local mix = (mixAmp + mixPitch) * 0.5;
 
 local lpf = LPF24()
