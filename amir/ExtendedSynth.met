@@ -1,10 +1,10 @@
 author=Amir
-revision=6
+revision=1
 runtimeName=midipatch
 runtimeVersion=0.0.1
 description=A synthesizer with 2 multi waveform oscillators, a filter stage as well as a frequency and amplitude modulator
-date=1573924557
+date=1573994731
 layout=
-parameters={"Global.Volume":"0.5","Global.Attack":"0.1","Global.Decay":"0","Global.Sustain":"1","Global.Release":"0.1","OSC0.Gain":"0.75","OSC0.Sine":"1","OSC0.SinePitch":"1","OSC0.Square":"0","OSC0.SquarePitch":"0","OSC0.Triangle":"0","OSC0.TrianglePitch":"0","OSC1.Gain":"0.5","OSC1.Sine":"0","OSC1.SinePitch":"0","OSC1.Square":"0.5","OSC1.SquarePitch":"1","OSC1.Triangle":"0","OSC1.TrianglePitch":"0","MOD.Amp_Freq":"0.5","MOD.Amp_Dry":"1","MOD.Amp_Wet":"0.492427","MOD.Pitch_Freq":"0.493085","MOD.Pitch_Dry":"1","MOD.Pitch_Wet":"0.5","Filter.LP_Freq":"1","Filter.LP_Q":"0","Filter.HP_Freq":"0","Filter.HP_Q":"0"}
+parameters={"Global.Volume":"0.2","Global.Attack":"0.1","Global.Decay":"0","Global.Sustain":"1","Global.Release":"0.1","OSC0.Gain":"1","OSC0.Sine":"1","OSC0.SinePitch":"1","OSC0.Square":"0","OSC0.SquarePitch":"0","OSC0.Triangle":"0","OSC0.TrianglePitch":"0","OSC1.Gain":"0.75","OSC1.Sine":"1","OSC1.SinePitch":"0.98","OSC1.Square":"0.2","OSC1.SquarePitch":"0.99","OSC1.Triangle":"1","OSC1.TrianglePitch":"0.99","MOD.Amp_Freq":"0.01","MOD.Amp_Dry":"1","MOD.Amp_Wet":"0.2","MOD.Amp_Amount":"0.1","MOD.Pitch_Freq":"0.01","MOD.Pitch_Dry":"1","MOD.Pitch_Wet":"0.2","MOD.Pitch_Amount":"0.1","Filter.LP_Freq":"0.9","Filter.LP_Q":"0","Filter.HP_Freq":"0","Filter.HP_Q":"0"}
 keyboardBindings=
 midiBindings=
