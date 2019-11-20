@@ -1,0 +1,10 @@
+author=
+revision=3
+runtimeName=midipatch
+runtimeVersion=0.0.1
+description=A snare drum synthesizer
+date=1574174436
+layout=
+parameters={"Global.threshold":"-12","Global.ratio":"2","Global.attackTime":"0.001","Global.releaseTime":"0.05","Global.gain":"0","Global.bypass":"0"}
+keyboardBindings=
+midiBindings=

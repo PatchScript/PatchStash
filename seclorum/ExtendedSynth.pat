@@ -25,20 +25,19 @@ local squareP1 = synth:addParameter("OSC1.SquarePitch", 1.0)
 local triangle1 = synth:addParameter("OSC1.Triangle", 1.0)
 local triangleP1 = synth:addParameter("OSC1.TrianglePitch", 1.0)
 
-local lfoAmpFreq = synth:addParameter("MOD.Amp_Freq", 0.5)
-local lfoAmpDry = synth:addParameter("MOD.Amp_Dry", 1.0)
-local lfoAmpWet = synth:addParameter("MOD.Amp_Wet", 0.5)
-local lfoAmpAmount = synth:addParameter("MOD.Amp_Amount", 0.5)
-
-local lfoPitchFreq = synth:addParameter("MOD.Pitch_Freq", 0.5)
-local lfoPitchDry = synth:addParameter("MOD.Pitch_Dry", 1.0)
-local lfoPitchWet = synth:addParameter("MOD.Pitch_Wet", 0.5)
-local lfoPitchAmount = synth:addParameter("MOD.Pitch_Amount", 0.5)
-
 local lpCutoff = synth:addParameter("Filter.LP_Freq", 1.0)
 local lpQ = synth:addParameter("Filter.LP_Q", 0.0)
 local hpCutoff = synth:addParameter("Filter.HP_Freq", 0.0)
 local hpQ = synth:addParameter("Filter.HP_Q", 0.0)
+
+local lfoAmpFreq = synth:addParameter("MOD.Amp_Freq", 0.5)
+local lfoAmpDry = synth:addParameter("MOD.Amp_Dry", 1.0)
+local lfoAmpWet = synth:addParameter("MOD.Amp_Wet", 0.5)
+
+local lfoPitchFreq = synth:addParameter("MOD.Pitch_Freq", 0.5)
+local lfoPitchDry = synth:addParameter("MOD.Pitch_Dry", 1.0)
+local lfoPitchWet = synth:addParameter("MOD.Pitch_Wet", 0.5)
+
 
 local voiceFreq = ControlMidiToFreq():input(noteNum)
 
@@ -78,6 +77,7 @@ local mixAmp = ((osc0AmpWet * lfoAmpWet) + (osc0Dry * lfoAmpDry) +
   				(osc1AmpWet * lfoAmpWet) + (osc1Dry * lfoAmpDry)) * 0.25;
 local mixPitch = ((osc0PitchWet * lfoPitchWet) + (osc0Dry * lfoPitchDry) +
   				(osc1PitchWet * lfoPitchWet) + (osc1Dry * lfoPitchDry)) * 0.25; 
+
 local mix = (mixAmp + mixPitch) * 0.5;
 
 local lpf = LPF24()
@@ -98,4 +98,5 @@ local env = ADSR()
 
 synth:setOutputGen(((hpf:input(lpf:input(mix)) * env)
   * (FixedValue(0.02) + noteVelocity * 0.005)) * volume);
+
 
